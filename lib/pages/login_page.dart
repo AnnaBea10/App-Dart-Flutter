@@ -9,7 +9,6 @@ class LoginPage extends StatelessWidget {
   final passwordController = TextEditingController();
 
   void signUserIn() {
-    // Implemente a lógica de login aqui
   }
 
   @override

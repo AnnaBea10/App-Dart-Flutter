@@ -9,7 +9,7 @@ class CadastroPage extends StatelessWidget{
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
   
-   void signUserIn() {
+   void signUserUp() {
     // Implemente a lógica de login aqui
   }
 
@@ -66,7 +66,7 @@ class CadastroPage extends StatelessWidget{
               const SizedBox(height: 10),
               
               MyButton(
-                onTap: signUserIn,
+                onTap: signUserUp,
               ),
               
               const SizedBox(height: 50),
