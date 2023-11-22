@@ -34,6 +34,7 @@ class User {
   }
 }
 
+//endpoint
 Future<List<User>> fetchUsers() async {
   final response = await http.get('http://localhost:8080/users');
 

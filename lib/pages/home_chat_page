@@ -6,7 +6,7 @@ class HomeChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromRGBO(47, 47, 47, 1),
       appBar: AppBar(
         elevation: 8,
         leading: IconButton(

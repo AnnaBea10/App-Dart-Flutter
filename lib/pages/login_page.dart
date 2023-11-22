@@ -13,7 +13,7 @@ void signUserIn() {
   String username = usernameController.text.trim();
   String password = passwordController.text.trim();
   
-  if (email.isEmpty || username.isEmpty || password.isEmpty) {
+  if (username.isEmpty || password.isEmpty) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -32,7 +32,7 @@ void signUserIn() {
     return;
   }
 
-  // Lógica de implementação
+  // Aqui seria a lógica de implementação, mas não fiz o token
   bool authSuccess = true;
 
   if (authSuccess) {

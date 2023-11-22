@@ -34,8 +34,7 @@ class CadastroPage extends StatelessWidget{
     return;
   }
 
-  // Implemente sua lógica de autenticação aqui (pode ser uma chamada a uma API, autenticação no Firebase, etc.)
-  // Simulando uma autenticação bem-sucedida neste exemplo
+  // Lógica de implementação
   bool authSuccess = true;
 
   if (authSuccess) {
