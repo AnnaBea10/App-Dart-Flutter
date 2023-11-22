@@ -12,6 +12,11 @@ class Message {
     this.text,
     this.unread,
   });
+
+  String formattedTime(){
+    DateTime dateTime = DateTime.parse(time);
+    return DateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").format(dateTime); 
+  }
 }
 
 List<Message> chats = [

@@ -10,8 +10,57 @@ class CadastroPage extends StatelessWidget{
   final passwordController = TextEditingController();
   
    void signUserUp() {
-    // Implemente a lógica de login aqui
+
+  String email = emailController.text.trim();
+  String username = usernameController.text.trim();
+  String password = passwordController.text.trim();
+
+  if (email.isEmpty || username.isEmpty || password.isEmpty) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Erro'),
+        content: Text('Por favor, preencha todos os campos.'),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text('OK'),
+          ),
+        ],
+      ),
+    );
+    return;
   }
+
+  // Implemente sua lógica de autenticação aqui (pode ser uma chamada a uma API, autenticação no Firebase, etc.)
+  // Simulando uma autenticação bem-sucedida neste exemplo
+  bool authSuccess = true;
+
+  if (authSuccess) {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => LoginPage()),    
+      );
+  } else {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Erro de Autenticação'),
+        content: Text('Credenciais inválidas. Por favor, tente novamente.'),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text('OK'),
+          ),
+        ],
+      ),
+    );
+  }
+}
 
   @override
   Widget build(BuildContext context) {

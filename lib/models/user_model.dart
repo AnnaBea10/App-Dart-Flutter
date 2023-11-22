@@ -1,4 +1,5 @@
 class User {
+
   final int id;
   final String name;
   final String imageUrl;
@@ -10,6 +11,17 @@ class User {
     this.imageUrl,
     this.isOnline,
   });
+
+//Convertendo int para String, já que na api id=Long
+Map<String, dynamic> toJson() {
+  return{
+    'id' : id.toString(),
+    'name' : name,
+    'imageUrl' : imageUrl,
+    'isOnline' : isOnline,
+  };
+}
+
 }
 
 final User currentUser = User(
