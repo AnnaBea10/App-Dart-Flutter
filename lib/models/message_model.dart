@@ -27,7 +27,7 @@ List<Message> chats = [
     unread: true,
   ),
   Message(
-    sender: captainAmerica,
+    sender: Rogério,
     time: '12:00',
     text: 'Qual horário?',
     unread: false,

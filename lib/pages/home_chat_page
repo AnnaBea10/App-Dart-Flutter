@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/models/message_model.dart';
 import 'package:flutter_application/screens/chat_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
           onPressed: () {},
         ),
         title: Text(
-          '',
+          'Chat',
           style: TextStyle(
             color: Colors.white,
           ),
