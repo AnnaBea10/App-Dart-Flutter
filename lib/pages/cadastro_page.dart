@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/components/my_button.dart';
 import 'package:flutter_application/components/my_textfield.dart';
 
-class LoginPage extends StatelessWidget {
-  LoginPage({Key? key}) : super(key: key);
+class CadastroPage extends StatelessWidget{
+  CadastroPage ({Key? key}) : super(key: key);
 
+  final emailController = TextEditingController();
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
-
-  void signUserIn() {
+  
+   void signUserIn() {
     // Implemente a lógica de login aqui
   }
 
@@ -23,7 +24,7 @@ class LoginPage extends StatelessWidget {
             children: [
               
               Text(
-                'Olá amigo(a)!',
+                'Seja bem-vindo(a)!',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
@@ -31,21 +32,29 @@ class LoginPage extends StatelessWidget {
               ),
               
               Text(
-                'Bom te ver novamente!',
+                'Cadastre-se e mantenhe-se conectado com a gente!',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 8,
                 ),
               ),
-             
-              const SizedBox(height: 50),
+              
+              SizedBox(height: 50),
+              
+              MyTextField(
+                controller: emailController,
+                hintText: 'Email',
+                obscureText: true,
+              ),
+              
+              const SizedBox(height: 10),
               
               MyTextField(
                 controller: usernameController,
                 hintText: 'Nome',
                 obscureText: true,
               ),
-
+              
               const SizedBox(height: 10),
               
               MyTextField(
@@ -81,17 +90,8 @@ class LoginPage extends StatelessWidget {
                       children: [
                         
                         Text(
-                          'Ainda não possui uma conta?',
+                          'Já possui uma conta? Faça Login',
                           style: TextStyle(color: Colors.white),
-                        ),
-                        
-                        const SizedBox(width: 4),
-                        
-                        const Text(
-                          'Crie uma conta',
-                          style: TextStyle(
-                              color: Colors.blue,
-                              fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -105,3 +105,5 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+
+
