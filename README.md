@@ -1,16 +1,29 @@
-# flutter_application
+# Aplicação FLutter
 
-A new Flutter project.
+* [Título.](#Título)
+* [Índice](#índice)
+* [Descrição do Projeto](#descrição-do-projeto)
+* [Acesso ao Projeto](#acesso-ao-projeto)
+* [Tecnologias utilizadas](#tecnologias-utilizadas)
 
-## Getting Started
+# 📝 Descrição do Projeto 
 
-This project is a starting point for a Flutter application.
+  Applicativo de contratação de serviços para casa.
 
-A few resources to get you started if this is your first Flutter project:
+# 🔨 Funcionalidades do projeto
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- `Funcionalidade 1`: Oferecer serviços.
+- `Funcionalidade 2`: Contratar pressoas diretamente por meio de um chat.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# 🛠️ Acesso ao Projeto
+
+Após baixar ou clonar o projeto:
+
+Os dados podem ser acessos pelo H2Database pela porta padrão do banco, e as requisições pelo Postman com os métodos GET, POST, PUT. 
+
+# ✔️ Tecnologias utilizadas
+
+* [Dart](#Dart)
+* [Flutter](#Flutter)
+* [H2Database](#H2Database)
+* [Postman](#Postman)
