@@ -1,7 +1,6 @@
 # Aplicação FLutter
 
 * [Título.](#Título)
-* [Índice](#índice)
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Acesso ao Projeto](#acesso-ao-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
