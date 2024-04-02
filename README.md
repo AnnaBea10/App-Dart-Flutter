@@ -7,7 +7,8 @@
 
 # 📝 Descrição do Projeto 
 
-  Applicativo de contratação de serviços para casa.
+Projeto de estudo da faculdade. A ideia era criar uma aplicativo de troca de contratação de serviços por meio da troca de mensgens diretas. O aplicativo oferece as opções de servidores para contratação e o chat de mensagens. Foi utilizada a linguagem Flutter na IDE VSCode.
+
 
 # 🔨 Funcionalidades do projeto
 
@@ -15,10 +16,6 @@
 - `Funcionalidade 2`: Contratar pressoas diretamente por meio de um chat.
 
 # 🛠️ Acesso ao Projeto
-
-Após baixar ou clonar o projeto:
-
-Os dados podem ser acessos pelo H2Database pela porta padrão do banco, e as requisições pelo Postman com os métodos GET, POST, PUT. 
 
 # ✔️ Tecnologias utilizadas
 
